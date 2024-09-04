@@ -1,0 +1,68 @@
+/* styles.css */
+body {
+    background-color: #121212; /* Azul escuro para o fundo */
+    color: #ffffff; /* Cor do texto branca */
+    font-family: 'Arial', sans-serif; /* Fonte padrão */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Para evitar barra de rolagem */
+    position: relative;
+}
+
+/* Aumentando o tamanho das estrelas no fundo */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, #1e90ff 1.5px, transparent 1.5px);
+    background-size: 25px 25px; /* Tamanho e espaçamento das estrelas */
+    opacity: 0.4; /* Para tornar as estrelas menos chamativas */
+    z-index: 1;
+}
+
+.container {
+    text-align: center; /* Centralizar conteúdo */
+    background-color: #1e1e1e; /* Um tom de azul escuro um pouco mais claro para contraste */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 500px; /* Para limitar a largura do contêiner */
+    width: 100%;
+    position: relative;
+    z-index: 2; /* Para estar acima do fundo de estrelas */
+}
+
+h1 {
+    color: #d32f2f; /* Vermelho para o título */
+    font-size: 2.5rem;
+    text-align: center; /* Alinhado ao centro */
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    text-align: center; /* Centraliza o botão */
+}
+
+button {
+    background-color: #d32f2f; /* Vermelho para o botão */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c62828; /* Tom mais escuro de vermelho no hover */
+}
